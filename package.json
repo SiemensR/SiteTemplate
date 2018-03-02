@@ -2,14 +2,13 @@
   "name": "sitetemplate",
   "version": "1.0.0",
   "description": "<< Read Me >>",
-  "main": "index.php",
-  "dependencies": {},
   "devDependencies": {
-    "grunt": "^1.0.2",
-    "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-uglify": "^3.3.0",
-    "grunt-contrib-watch": "^1.0.0"
+    "grunt": "~0.4.1",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-sass": "~0.9.0",
+    "grunt-contrib-watch": "~0.4.4"
   },
+  "main": "gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,7 +16,7 @@
     "type": "git",
     "url": "git+https://github.com/SiemensR/SiteTemplate.git"
   },
-  "author": "Anton Sementsov",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/SiemensR/SiteTemplate/issues"
