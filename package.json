@@ -1,0 +1,28 @@
+{
+  "name": "webtemplating",
+  "version": "1.0.1",
+  "description": "This is a general template for all websites and portals ",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anton Sementsov",
+  "license": "ISC",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-express": "^1.4.1",
+    "grunt-parallel": "^0.5.1",
+    "node-sass": "^4.7.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^3.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-parallel": "^0.5.1",
+    "load-grunt-tasks": "^3.5.2",
+    "serve-static": "^1.13.1"
+  }
+}
