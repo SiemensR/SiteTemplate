@@ -2,6 +2,9 @@
 <nav id="nav" class="ry">
   <ul id="main-menu">
     <li>
+      <a href="../logout.php"><i class="fa fa-home"></i> Logout</a>
+    </li>
+    <li>
       <a href="index.php"><i class="fa fa-home"></i> Home</a>
     </li>
     <li>

@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(!isset($_SESSION['userid'])) {
+    die('The contents are available only after <a href="../login.php">login</a>');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
