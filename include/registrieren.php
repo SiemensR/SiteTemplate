@@ -5,7 +5,7 @@ $pdo = new PDO('mysql:host=localhost;dbname=testo', 'root', 'root');
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Registrierung</title>
+  <title>Registration</title>
 </head>
 <body>
 
@@ -19,15 +19,15 @@ if(isset($_GET['register'])) {
     $passwort2 = $_POST['passwort2'];
 
     if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo 'Bitte eine gültige E-Mail-Adresse eingeben<br>';
+        echo 'Please enter your email<br>';
         $error = true;
     }
     if(strlen($passwort) == 0) {
-        echo 'Bitte ein Passwort angeben<br>';
+        echo 'Please enter your password<br>';
         $error = true;
     }
     if($passwort != $passwort2) {
-        echo 'Die Passwörter müssen übereinstimmen<br>';
+        echo 'Passwords should be the same<br>';
         $error = true;
     }
 
@@ -38,7 +38,7 @@ if(isset($_GET['register'])) {
         $user = $statement->fetch();
 
         if($user !== false) {
-            echo 'Diese E-Mail-Adresse ist bereits vergeben<br>';
+            echo 'This email has been already used<br>';
             $error = true;
         }
     }
@@ -51,10 +51,12 @@ if(isset($_GET['register'])) {
         $result = $statement->execute(array('email' => $email, 'passwort' => $passwort_hash));
 
         if($result) {
-            echo 'Du wurdest erfolgreich registriert. <a href="login.php">Zum Login</a>';
+            // echo 'You have been successfully registered. <a href="login.php">Zum Login</a>';
+            header("Location: login.php");
+            die();
             $showFormular = false;
         } else {
-            echo 'Beim Abspeichern ist leider ein Fehler aufgetreten<br>';
+            echo 'Ooops! Something went wrong! We could not save your data :(<br>';
         }
     }
 }
@@ -76,7 +78,7 @@ Passwort wiederholen:<br>
 </form>
 
 <?php
-} //Ende von if($showFormular)
+}  //Ende von if($showFormular)
 ?>
 
 </body>
