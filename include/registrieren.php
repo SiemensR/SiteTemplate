@@ -1,14 +1,22 @@
 <?php
 session_start();
-$pdo = new PDO('mysql:host=localhost;dbname=testo', 'root', 'root');
+$pdo = new PDO('mysql:host=localhost;dbname=testo', 'root', '');
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en" >
+
 <head>
-  <title>Registration</title>
+    <meta charset="UTF-8">
+    <title>Login/Logout animation concept</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+
+    <link rel="stylesheet" href="../static/css/main.min.css">
+
+
 </head>
 <body>
-
 <?php
 $showFormular = true; //Variable ob das Registrierungsformular anezeigt werden soll
 
@@ -64,22 +72,42 @@ if(isset($_GET['register'])) {
 if($showFormular) {
 ?>
 
-<form action="?register=1" method="post">
-E-Mail:<br>
-<input type="email" size="40" maxlength="250" name="email"><br><br>
-
-Dein Passwort:<br>
-<input type="password" size="40"  maxlength="250" name="passwort"><br>
-
-Passwort wiederholen:<br>
-<input type="password" size="40" maxlength="250" name="passwort2"><br><br>
-
-<input type="submit" value="Abschicken">
-</form>
-
 <?php
 }  //Ende von if($showFormular)
 ?>
 
+<!-- -->
+<div class="cont">
+    <div class="demo">
+        <div class="register">
+            <div class="register__check"></div>
+            <form action="?register=1" method="post">
+                <div class="register__form">
+                    <div class="register__row">
+                        <svg class="login__icon name svg-icon" viewBox="0 0 20 20">
+                            <path d="M0,20 a10,8 0 0,1 20,0z M10,0 a4,4 0 0,1 0,8 a4,4 0 0,1 0,-8" />
+                        </svg>
+                        <input type="email" class="login__input name" name="email" placeholder="Email">
+                    </div>
+                    <div class="register__row">
+                        <svg class="login__icon pass svg-icon" viewBox="0 0 20 20">
+                            <path d="M0,20 20,20 20,8 0,8z M10,13 10,16z M4,8 a6,8 0 0,1 12,0" />
+                        </svg>
+                        <input type="password" class="login__input pass" name="passwort" placeholder="Password">
+                    </div>
+                    <div class="register__row">
+                        <svg class="login__icon pass svg-icon" viewBox="0 0 20 20">
+                            <path d="M0,20 20,20 20,8 0,8z M10,13 10,16z M4,8 a6,8 0 0,1 12,0" />
+                        </svg>
+                        <input type="password" class="login__input pass" name="passwort2" placeholder="Repeat password">
+                    </div>
+                    <input type="submit" class="login__submit" value="Register me">
+            </form>
+            <p class="register__signup">Back to  <a href="login.php">login</a></p>
+        </div>
+    </div>
+</div>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script  src="../static/js/index.js"></script>
 </body>
 </html>

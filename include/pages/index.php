@@ -15,7 +15,7 @@ $user = $_SESSION['name'];
   <?php include('../header.php'); // echo "<br />\n";?>
   <?php include('../menu.php'); ?>
     <div class="container">
-    <h1>Hello, world and hello <?php echo $user; ?>!</h1>
+    <h1>Hello <?php echo $user; ?>!</h1>
 </div>
     <?php include('../footer.php'); ?>
     <?php include('../../templating/support-scripts.html'); ?>
