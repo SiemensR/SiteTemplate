@@ -19,7 +19,7 @@ if(isset($_GET['login'])) {
             header('Location: ' . $url, true, $permanent ? 301 : 302);
             exit();
         }
-        Redirect('pages/index.php', false);
+        Redirect('site/index.php', false);
     } else {
         $errorMessage = "E-Mail or Password was wrong<br>";
     }
@@ -31,7 +31,7 @@ if(isset($_GET['login'])) {
 
 <head>
   <meta charset="UTF-8">
-  <title>Login/Logout animation concept</title>
+  <title>Login Anton's Projects</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
 
   <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
