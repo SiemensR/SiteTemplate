@@ -4,7 +4,7 @@
   "description": "<< Read Me >>",
   "devDependencies": {
     "browser-sync": "^2.23.6",
-    "grunt": "~0.4.1",
+    "grunt": "^0.4.5",
     "grunt-browserify": "^5.2.0",
     "grunt-contrib-cssmin": "^2.2.1",
     "grunt-contrib-sass": "~0.9.0",
@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/SiemensR/SiteTemplate#readme",
   "dependencies": {
-    "grunt-browser-sync": "^2.2.0"
+    "grunt-browser-sync": "^2.2.0",
+    "sass": "^1.1.1"
   }
 }
