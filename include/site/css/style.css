@@ -11,6 +11,9 @@ p {
   line-height: 2rem;
 }
 
+#logo {
+  width: 65%;
+}
 .button-collapse {
   color: #26a69a;
 }
@@ -33,11 +36,22 @@ p {
   #index-banner .section {
     top: 10%;
   }
+  .playerList {
+    width: 100% !important;
+    margin-left: 0px!important;
+  }
+  .collapsible-body {
+    padding: 0rem!important;
+    display:flex;
+  }
 }
 
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
+  }
+  #logo {
+    width: 100%;
   }
 }
 
@@ -86,4 +100,18 @@ footer.page-footer {
 
 #go-top:hover {
   background: #333;
+}
+
+h1 {
+  font-size: 2.28rem;
+}
+
+.playerList {
+  width: 55%;
+  margin-left: 23%;
+}
+
+.collapsible-body {
+  padding-top: 1em;
+  padding-left: 10em;
 }

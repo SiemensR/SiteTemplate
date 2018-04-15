@@ -41,7 +41,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo"><img src="static/images/logo.png"/></a>
+      <a id="logo-container" href="#" class="brand-logo"><img src="static/images/logo.png" id="logo"/></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#music">Music</a></li>
         <li><a href="#vidos">Videos</a></li>
@@ -84,8 +84,78 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="col s12 center">
         <h3><i class="mdi-content-send brown-text "></i></h3>
-        <h4 id="music">Anton's Music</h4>
-        <p class="left-align light">Here will be some music</p><br/>
+        <h1 id="music">Anton's Music</h1>
+        <p class="left-align light">Some tracks recorded at home in different times before moving to Germany</p><br/>
+          <div class="playerList">
+          <ul class="collapsible">
+              <li class="left-align light">
+                  <div class="collapsible-header"><i class="material-icons">whatshot</i>Track 1</div>
+                  <div class="collapsible-body">
+                      <audio class="mejs__player"  src="static/media/mp3/track1.mp3" type="audio/mp3"></audio>
+                  </div>
+              </li>
+              <li class="left-align light">
+                  <div class="collapsible-header"><i class="material-icons">whatshot</i>Track 2</div>
+                  <div class="collapsible-body">
+                      <audio class="mejs__player"  src="static/media/mp3/track2.mp3" type="audio/mp3"></audio>
+                  </div>
+              </li>
+              <li class="left-align light">
+                  <div class="collapsible-header"><i class="material-icons">whatshot</i>Track 3</div>
+                  <div class="collapsible-body">
+                      <audio class="mejs__player"  src="static/media/mp3/track3.mp3" type="audio/mp3"></audio>
+                  </div>
+              </li>
+              <li class="left-align light">
+                  <div class="collapsible-header"><i class="material-icons">whatshot</i>Track 4</div>
+                  <div class="collapsible-body">
+                      <audio class="mejs__player"  src="static/media/mp3/track4.mp3" type="audio/mp3"></audio>
+                  </div>
+              </li>
+              <li class="left-align light">
+                  <div class="collapsible-header"><i class="material-icons">whatshot</i>Track 5</div>
+                  <div class="collapsible-body">
+                      <audio class="mejs__player"  src="static/media/mp3/track5.mp3" type="audio/mp3"></audio>
+                  </div>
+              </li>
+              <li class="left-align light">
+                  <div class="collapsible-header"><i class="material-icons">whatshot</i>Track 6</div>
+                  <div class="collapsible-body">
+                      <audio class="mejs__player"  src="static/media/mp3/track6.mp3" type="audio/mp3"></audio>
+                  </div>
+              </li>
+              <li class="left-align light">
+                  <div class="collapsible-header"><i class="material-icons">whatshot</i>Track 7</div>
+                  <div class="collapsible-body">
+                      <audio class="mejs__player"  src="static/media/mp3/track7.mp3" type="audio/mp3"></audio>
+                  </div>
+              </li>
+              <li class="left-align light">
+                  <div class="collapsible-header"><i class="material-icons">whatshot</i>Track 8</div>
+                  <div class="collapsible-body">
+                      <audio class="mejs__player"  src="static/media/mp3/track8.mp3" type="audio/mp3"></audio>
+                  </div>
+              </li>
+              <li class="left-align light">
+                  <div class="collapsible-header"><i class="material-icons">whatshot</i>Track 9</div>
+                  <div class="collapsible-body">
+                      <audio class="mejs__player"  src="static/media/mp3/track9.mp3" type="audio/mp3"></audio>
+                  </div>
+              </li>
+              <li class="left-align light">
+                  <div class="collapsible-header"><i class="material-icons">whatshot</i>Track 10</div>
+                  <div class="collapsible-body">
+                      <audio class="mejs__player"  src="static/media/mp3/track10.mp3" type="audio/mp3"></audio>
+                  </div>
+              </li>
+              <li class="left-align light">
+                  <div class="collapsible-header"><i class="material-icons">whatshot</i>Track 11</div>
+                  <div class="collapsible-body">
+                      <audio class="mejs__player"  src="static/media/mp3/track11.mp3" type="audio/mp3"></audio>
+                  </div>
+              </li>
+          </ul>
+          </div>
       </div>
     </div>
   </div>
