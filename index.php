@@ -5,4 +5,4 @@ function Redirect($url, $permanent = false)
     exit();
 }
 Redirect('include/login.php', false);
-?>
+
